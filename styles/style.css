@@ -9,14 +9,45 @@
     ;
 }
 
-.hero-banner-container img[src*="Jarellsa"] {
-    grid-area: jarellsa;
-}
-
-.hero-banner-container img[src*="Jesper"] {
-    grid-area: jesper;
-}
-
-.hero-banner-container img[src*="Sun"] {
-    grid-area: joost;
+.hero-banner-container img {
+    height: 100%;
+    width: 100%;
+    &[src*="Jarellsa"] {grid-area: jarellsa;}
+    &[src*="Jesper"] {grid-area: jesper;}
+    &[src*="Joost"] {grid-area: joost;}
+    &[src*="Justin"] {grid-area: justin;}
+    &[src*="Lyanne"] {grid-area: lyanne;}
+    &[src*="Lou"] {grid-area: lou;}
+    &[src*="Sam"] {grid-area: sam;}
+    &[src*="Rick"] {grid-area: rick;}
+    &[src*="Loïs"] {grid-area: lois;}
+    &[src*="Hva"] {grid-area: hva;}
+    &[src*="Miriale"] {grid-area: miriale;}
+    &[src*="Rosa"] {grid-area: rosa;}
+    &[src*="Younes"] {grid-area: younes;}
+    &[src*="Wesley"] {grid-area: wesley;}
+    &[src*="David"] {grid-area: david;}
+    &[src*="Bounyad"] {grid-area: bounyad;}
+    &[src*="Yigal"] {grid-area: yigal;}
+    &[src*="Rowynn"] {grid-area: rowynn;}
+    &[src*="Sophie"] {grid-area: sophie;}
+    &[src*="Ahmet"] {grid-area: ahmet;}
+    &[src*="Britt"] {grid-area: britt;}
+    &[src*="Beyza"] {grid-area: beyza;}
+    &[src*="Noey"] {grid-area: noey;}
+    &[src*="Rayhana"] {grid-area: rayhanna;}
+    &[src*="Sun"] {grid-area: sun;}
+    &[src*="Chahed"] {grid-area: chahed;}
+    &[src*="Queeny"] {grid-area: queeny;}
+    &[src*="Thijs"] {grid-area: thijs;}
+    &[src*="Rabia"] {grid-area: rabia;}
+    &[src*="Hajar"] {grid-area: hajar;}
+    &[src*="Melissa"] {grid-area: melissa;}
+    &[src*="Aya"] {grid-area: aya;}
+    &[src*="Savannah"] {grid-area: savannah;}
+    &[src*="Lyndsey"] {grid-area: lyndsey;}
+    &[src*="Celeste"] {grid-area: celeste;}
+    &[src*="Sami"] {grid-area: sami;}
+    &[src*="Aliya"] {grid-area: aliya;}
+    &[src*="Mika"] {grid-area: mika;}
 }
