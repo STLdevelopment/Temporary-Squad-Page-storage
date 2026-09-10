@@ -1,0 +1,1 @@
+# Temporary-Squad-Page-storage
