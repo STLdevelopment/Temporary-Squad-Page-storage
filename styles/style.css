@@ -1,3 +1,8 @@
+body {
+    margin: unset;
+    background-color: black;
+}
+
 .hero-banner-container {
     display: grid;
     grid-template-areas:
@@ -12,6 +17,7 @@
 .hero-banner-container img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
     &[src*="Jarellsa"] {grid-area: jarellsa;}
     &[src*="Jesper"] {grid-area: jesper;}
     &[src*="Joost"] {grid-area: joost;}
@@ -35,7 +41,7 @@
     &[src*="Britt"] {grid-area: britt;}
     &[src*="Beyza"] {grid-area: beyza;}
     &[src*="Noey"] {grid-area: noey;}
-    &[src*="Rayhana"] {grid-area: rayhanna;}
+    &[src*="Rayhana"] {grid-area: rayhana;}
     &[src*="Sun"] {grid-area: sun;}
     &[src*="Chahed"] {grid-area: chahed;}
     &[src*="Queeny"] {grid-area: queeny;}
