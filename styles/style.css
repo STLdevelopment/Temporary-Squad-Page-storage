@@ -1,0 +1,22 @@
+.hero-banner-container {
+    display: grid;
+    grid-template-areas:
+    'jarellsa jesper joost justin lyanne lou sam rick'
+    'lois hva miriale rosa younes wesley david bounyad'
+    'yigal rowynn sophie . . ahmet britt beyza'
+    'noey rayhana sun chahed queeny thijs rabia hajar'
+    'melissa aya savannah lyndsey celeste sami aliya mika'
+    ;
+}
+
+.hero-banner-container img[src*="Jarellsa"] {
+    grid-area: jarellsa;
+}
+
+.hero-banner-container img[src*="Jesper"] {
+    grid-area: jesper;
+}
+
+.hero-banner-container img[src*="Sun"] {
+    grid-area: joost;
+}
