@@ -6,11 +6,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Carter One", system-ui;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     margin: unset;
     background-color: black;
 }
 
+/* Afbeeldingen hero */
 .hero-banner {
     min-height: 100vh;
 }
@@ -108,6 +114,13 @@ body {
     margin: 0 0 10px 0;
 }
 
+/* SVG shape divider */
+.visitekaartje-divider {
+    z-index: 1;
+    position: relative;
+}
+
+/* Visitekaartjes */
 .cards-section {
     min-height: calc(100vh + 150px);
     background-color: #FFFFD7;
