@@ -20,6 +20,7 @@ body {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Afbeeldingen hero */
@@ -137,10 +138,26 @@ body {
     position: relative;
 }
 
+.card-section-container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cards-section h2 {
+    margin: unset;
+    font-size: clamp(1rem, 15.1751vw - 6.2746rem, 3.4375rem);
+}
+
 /* Direct parent container of cards */
 .cards-section article {
     display: flex;
     flex-wrap: nowrap;
+    gap: 30px;
 }
 
 .cards-section figure {
@@ -152,12 +169,13 @@ body {
     background-color: white;
     border: 1.5rem solid white;
     border-radius: 10px;
+    margin: unset;
 }
 
 .cards-section figure img {
     width: 100%;
     height: auto;
-    aspect-ratio: 1/1;
+    aspect-ratio: 5/4;
     object-fit: cover;
     border-radius: 10px;
 }
