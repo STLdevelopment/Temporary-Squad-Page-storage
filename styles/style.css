@@ -1,6 +1,18 @@
+html {
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Carter One", system-ui;
+}
+
 body {
     margin: unset;
     background-color: black;
+}
+
+.hero-banner {
+    position: fixed;
 }
 
 .hero-banner-container {
@@ -8,10 +20,9 @@ body {
     grid-template-areas:
     'jarellsa jesper joost justin lyanne lou sam rick'
     'lois hva miriale rosa younes wesley david bounyad'
-    'yigal rowynn sophie . . ahmet britt beyza'
+    'yigal rowynn sophie text text ahmet britt beyza'
     'noey rayhana sun chahed queeny thijs rabia hajar'
-    'melissa aya savannah lyndsey celeste sami aliya mika'
-    ;
+    'melissa aya savannah lyndsey celeste sami aliya mika';
 }
 
 .hero-banner-container img {
@@ -56,4 +67,37 @@ body {
     &[src*="Sami"] {grid-area: sami;}
     &[src*="Aliya"] {grid-area: aliya;}
     &[src*="Mika"] {grid-area: mika;}
+}
+
+.hero-banner-container hgroup {
+    grid-area: text;
+}
+
+.hero-banner-container :is(h1, p) {
+    color: white;
+}
+
+.cards-section {
+    min-height: calc(100vh + 150px);
+    background-color: #FFFFD7;
+    background-image: radial-gradient(black 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+
+}
+
+.cards-section .cards-first-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cards-section figure {
+    aspect-ratio: 3/4;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 10px;
 }
