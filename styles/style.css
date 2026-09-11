@@ -137,7 +137,8 @@ body {
     position: relative;
 }
 
-.cards-section .cards-first-row {
+/* Direct parent container of cards */
+.cards-section article {
     display: flex;
     flex-wrap: nowrap;
 }
@@ -149,7 +150,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    border: 5px solid white;
+    border: 1.5rem solid white;
     border-radius: 10px;
 }
 
@@ -158,4 +159,18 @@ body {
     height: auto;
     aspect-ratio: 1/1;
     object-fit: cover;
+    border-radius: 10px;
+}
+
+.cards-section figure h3 {
+    font-size: clamp(1rem, 5.4475vw - 1.6114rem, 1.875rem);
+    margin: 1.5rem 0 1rem 0;
+}
+
+.cards-section figure button {
+    font-weight: bold;
+    background-color: #D9D9D9;
+    border: unset;
+    padding: 12px 20px;
+    border-radius: 99px;
 }
