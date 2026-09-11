@@ -12,10 +12,11 @@ body {
 }
 
 .hero-banner {
-    position: fixed;
+    min-height: 100vh;
 }
 
 .hero-banner-container {
+    position: fixed;
     display: grid;
     grid-template-areas:
     'jarellsa jesper joost justin lyanne lou sam rick'
@@ -23,6 +24,8 @@ body {
     'yigal rowynn sophie text text ahmet britt beyza'
     'noey rayhana sun chahed queeny thijs rabia hajar'
     'melissa aya savannah lyndsey celeste sami aliya mika';
+    height: 100%;
+    background-color: black;
 }
 
 .hero-banner-container img {
@@ -83,7 +86,8 @@ body {
     background-image: radial-gradient(black 1px, transparent 0);
     background-size: 40px 40px;
     background-position: -19px -19px;
-
+    z-index: 1;
+    position: relative;
 }
 
 .cards-section .cards-first-row {
