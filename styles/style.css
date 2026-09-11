@@ -15,6 +15,17 @@ body {
     min-height: 100vh;
 }
 
+.hero-banner:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    z-index: 1;
+}
+
 .hero-banner-container {
     position: fixed;
     display: grid;
@@ -27,6 +38,7 @@ body {
     grid-gap: .5rem;
     height: 100%;
     background-color: black;
+    transform: rotate(3deg);
 }
 
 .hero-banner-container img {
@@ -80,6 +92,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    transform: rotate(-3deg);
 
     & * {
         color: white;
@@ -88,6 +101,7 @@ body {
 
 .hero-banner-container hgroup h1 {
     margin: 10px 0 0 0;
+    font-size: clamp(1rem, 15.1751vw - 6.2746rem, 3.4375rem);
 }
 
 .hero-banner-container hgroup p {
