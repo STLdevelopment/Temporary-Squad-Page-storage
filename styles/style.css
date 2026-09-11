@@ -24,12 +24,13 @@ body {
     'yigal rowynn sophie text text ahmet britt beyza'
     'noey rayhana sun chahed queeny thijs rabia hajar'
     'melissa aya savannah lyndsey celeste sami aliya mika';
+    grid-gap: .5rem;
     height: 100%;
     background-color: black;
 }
 
 .hero-banner-container img {
-    height: 100%;
+    height: calc(100vh / 5);
     width: 100%;
     object-fit: cover;
     &[src*="Jarellsa"] {grid-area: jarellsa;}
@@ -74,10 +75,23 @@ body {
 
 .hero-banner-container hgroup {
     grid-area: text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    & * {
+        color: white;
+    }
 }
 
-.hero-banner-container :is(h1, p) {
-    color: white;
+.hero-banner-container hgroup h1 {
+    margin: 10px 0 0 0;
+}
+
+.hero-banner-container hgroup p {
+    margin: 0 0 10px 0;
 }
 
 .cards-section {
