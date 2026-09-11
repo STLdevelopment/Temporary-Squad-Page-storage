@@ -16,6 +16,7 @@ body {
     background-color: black;
 }
 
+/* Algemene layout */
 .row {
     max-width: 1300px;
     width: 100%;
@@ -191,4 +192,9 @@ body {
     border: unset;
     padding: 12px 20px;
     border-radius: 99px;
+}
+
+/* Cards styling and tilting */
+.cards-section figure:nth-child(3n - 2) {
+    transform: rotate(-3deg);
 }
