@@ -16,6 +16,12 @@ body {
     background-color: black;
 }
 
+.row {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* Afbeeldingen hero */
 .hero-banner {
     min-height: 100vh;
@@ -145,4 +151,11 @@ body {
     background-color: white;
     border: 5px solid white;
     border-radius: 10px;
+}
+
+.cards-section figure img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
