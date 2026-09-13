@@ -137,13 +137,19 @@ body {
     z-index: 1;
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cards-section-wrapper {
     transform: rotate(-90deg);
     height: 100vw;
     width: 100vh;
-    align-self: center;
-    align-items: center;
+    display: flex;
     justify-content: center;
-    overflow-x: hidden;
+    align-items: center;
+    overflow: scroll;
 }
 
 .cards-section-container {
