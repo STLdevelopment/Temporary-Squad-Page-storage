@@ -136,19 +136,21 @@ body {
     background-position: -19px -19px;
     z-index: 1;
     position: relative;
-    min-height: 100vh;
     display: flex;
+    transform: rotate(-90deg);
+    height: 100vw;
+    width: 100vh;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
 }
 
 .cards-section-container {
-    max-width: 1300px;
-    width: 100%;
-    min-height: calc(100vh - 200px);
     margin: 0 auto;
     padding: 50px 20px;
+    transform: rotate(90deg);
     display: grid;
-    grid-template-rows: auto repeat(2, minmax(0, 1fr));
-    gap: 30px;
 }
 
 .cards-section h2 {
