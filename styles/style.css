@@ -157,6 +157,7 @@ body {
     padding: 50px 20px;
     transform: rotate(90deg);
     display: grid;
+    grid-row-gap: 1.75rem;
 }
 
 .cards-section h2 {
@@ -193,7 +194,7 @@ body {
 
 .cards-section figure h3 {
     font-size: clamp(1rem, 5.4475vw - 1.6114rem, 1.875rem);
-    margin: 1.5rem 0 1rem 0;
+    margin: 4px 0;
 }
 
 .cards-section figure button {
