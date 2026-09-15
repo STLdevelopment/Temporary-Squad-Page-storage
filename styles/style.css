@@ -198,6 +198,15 @@ body {
     aspect-ratio: 5/4;
     object-fit: cover;
     border-radius: 10px;
+    transition: .3s;
+}
+
+.cards-section figure:hover img {
+    translate: -100%;
+}
+
+.cards-section figure img:nth-of-type(2) {
+    scale: 1.5;
 }
 
 .cards-section figure h3 {
