@@ -228,44 +228,26 @@ body {
 }
 
 /* Cards styling and tilting */
-.cards-section .cards-first-row figure:nth-child(3n - 2) {
-    rotate(-3deg)
+.cards-section .cards-first-row figure:nth-child(3n - 2),
+.cards-section .cards-second-row figure:nth-child(3n) {
+    rotate: -3deg;
     &:hover {
-        rotate(-1deg)
+        rotate: -1deg;
     }
 }
 
-.cards-section .cards-first-row figure:nth-child(3n - 1) {
-    rotate: 5deg;
-    &:hover {
-        rotate(2deg)
-    }
-}
-
-.cards-section .cards-first-row figure:nth-child(3n) {
-    rotate: 2deg;
-    &:hover {
-        rotate(0deg)
-    }
-}
-
-.cards-section .cards-second-row figure:nth-child(3n - 2) {
-    rotate: 2deg;
-    &:hover {
-        rotate(0deg)
-    }
-}
-
+.cards-section .cards-first-row figure:nth-child(3n - 1),
 .cards-section .cards-second-row figure:nth-child(3n - 1) {
     rotate: 5deg;
     &:hover {
-        rotate(2deg)
+        rotate: 2deg;
     }
 }
 
-.cards-section .cards-second-row figure:nth-child(3n) {
-    rotate(-3deg)
+.cards-section .cards-first-row figure:nth-child(3n),
+.cards-section .cards-second-row figure:nth-child(3n - 2) {
+    rotate: 2deg;
     &:hover {
-        rotate(-1deg)
+        rotate: 0deg;
     }
 }
