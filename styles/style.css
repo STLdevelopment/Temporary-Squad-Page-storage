@@ -184,6 +184,7 @@ body {
     border-bottom-width: 1rem;
     border-radius: 10px;
     margin: unset;
+    transition: .4s;
 }
 
 .cards-section figure div {
@@ -198,15 +199,11 @@ body {
     aspect-ratio: 5/4;
     object-fit: cover;
     border-radius: 10px;
-    transition: .3s;
+    transition: .4s;
 }
 
 .cards-section figure:hover img {
     translate: -100%;
-}
-
-.cards-section figure img:nth-child(2) {
-    scale: 1.5;
 }
 
 .cards-section figure h3 {
@@ -232,25 +229,43 @@ body {
 
 /* Cards styling and tilting */
 .cards-section .cards-first-row figure:nth-child(3n - 2) {
-    transform: rotate(-3deg);
+    rotate(-3deg)
+    &:hover {
+        rotate(-1deg)
+    }
 }
 
 .cards-section .cards-first-row figure:nth-child(3n - 1) {
-    transform: rotate(5deg);
+    rotate: 5deg;
+    &:hover {
+        rotate(2deg)
+    }
 }
 
 .cards-section .cards-first-row figure:nth-child(3n) {
-    transform: rotate(2deg);
+    rotate: 2deg;
+    &:hover {
+        rotate(0deg)
+    }
 }
 
 .cards-section .cards-second-row figure:nth-child(3n - 2) {
-    transform: rotate(2deg);
+    rotate: 2deg;
+    &:hover {
+        rotate(0deg)
+    }
 }
 
 .cards-section .cards-second-row figure:nth-child(3n - 1) {
-    transform: rotate(5deg);
+    rotate: 5deg;
+    &:hover {
+        rotate(2deg)
+    }
 }
 
 .cards-section .cards-second-row figure:nth-child(3n) {
-    transform: rotate(-3deg);
+    rotate(-3deg)
+    &:hover {
+        rotate(-1deg)
+    }
 }
