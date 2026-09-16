@@ -213,6 +213,7 @@ body {
 
 .cards-section figure a {
     font-weight: bold;
+    font-size: .85rem;
     background-color: #D9D9D9;
     border: unset;
     padding: 12px 20px;
