@@ -170,6 +170,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
+    padding-right: 20vw;
 }
 
 .cards-section figure {
