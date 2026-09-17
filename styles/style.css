@@ -12,6 +12,10 @@ main {
     scroll-snap-type: y proximity;
 }
 
+main > * {
+    scroll-snap-align: center;
+}
+
 body {
     margin: unset;
     background-color: black;
@@ -141,7 +145,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    scroll-snap-align: center;
 }
 
 .cards-section-wrapper {
