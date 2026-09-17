@@ -14,11 +14,6 @@ main {
     flex-direction: column;
 }
 
-main > * {
-    scroll-margin-top: 10vh;
-    scroll-snap-align: start;
-}
-
 body {
     margin: unset;
     background-color: black;
@@ -148,6 +143,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 .cards-section-wrapper {
