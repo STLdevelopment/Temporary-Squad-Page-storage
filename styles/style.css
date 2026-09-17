@@ -29,7 +29,7 @@ body {
 
 /* Afbeeldingen hero */
 .hero-banner {
-    min-height: 100vh;
+    min-height: 100lvh;
 }
 
 .hero-banner:after {
@@ -59,7 +59,7 @@ body {
 }
 
 .hero-banner-container img {
-    height: calc(100vh / 5);
+    height: calc(100lvh / 5);
     width: 100%;
     object-fit: cover;
     &[src*="Jarellsa"] {grid-area: jarellsa;}
@@ -118,7 +118,7 @@ body {
 
 .hero-banner-container hgroup h1 {
     margin: 10px 0 0 0;
-    font-size: clamp(1rem, 15.1751vw - 6.2746rem, 3.4375rem);
+    font-size: clamp(2rem, 15.1751vw - 6.2746rem, 3.4375rem);
 }
 
 .hero-banner-container hgroup p {
@@ -147,26 +147,32 @@ body {
 }
 
 .cards-section-wrapper {
-    transform: rotate(-90deg);
-    height: 100vw;
-    width: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: scroll;
+
+    @media (width > 80rem) {
+        transform: rotate(-90deg);
+        overflow: scroll;
+        height: 100vw;
+        width: 100vh;
+    }
 }
 
 .cards-section-container {
     margin: 0 auto;
     padding: 50px 20px;
-    transform: rotate(90deg);
     display: grid;
     grid-row-gap: 2.75rem;
+
+    @media (width > 80rem) {
+        transform: rotate(90deg);
+    }
 }
 
 .cards-section h2 {
     margin: unset;
-    font-size: clamp(1rem, 15.1751vw - 6.2746rem, 3.4375rem);
+    font-size: clamp(2rem, 15.1751vw - 6.2746rem, 3.4375rem);
 }
 
 /* Direct parent container of cards */
