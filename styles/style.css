@@ -436,10 +436,18 @@ body {
 .gebouwen img {
     width: 100%;
     object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .gebouwen article {
-    background-color: white;  
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    transition: .2s ease;
+}
+
+.gebouwen article:hover {
+    rotate: -2deg;
 }
 
 .breed {
@@ -450,48 +458,37 @@ body {
     aspect-ratio: 3 / 4;
 }
 
-.gebouwen h3 { 
-    font-family: "Carter One", sans-serif;
-    padding-left: 10px;
-    padding-top: 10px;
-    
+.gebouwen h3 {
+    padding: 0 1rem;
+    font-size: clamp(1.5rem, 5.4475vw - 1.6114rem, 1.875rem);
+    margin: 1rem 0;
 }
 
 .gebouwen p {
-    font-family: "Inter", sans-serif;
-    padding-left: 10px;
+    padding-left: 1rem;
     padding-bottom: 20px;
-}
-
-.gebouwen article {
-    position: relative; 
 }
 
 .gebouwen a {
     position: absolute;
     right: 10px;
     bottom: 20px;
-    
-    
-    width: 34px;
-    height: 46px;
-    
+    width: 2.75rem;
+    aspect-ratio: 1/1;
     background-color: #D9D9D9;
     color: black;
     text-decoration: none;
-
     border-radius: 12px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-size: 24px;
+    font-size: 1.25rem;
+    transition: .2s ease;
 }
 
 .gebouwen a:hover {
-    background-color: #c7c7c7;
-    transform: scale(1.08);
+    background-color: black;
+    color: #D9D9D9;
 }
 
 .footer {
