@@ -185,8 +185,13 @@ body {
 /* Direct parent container of cards */
 .cards-section article {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem 8rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 8rem;
+
+    @media (width > 48rem) {
+        gap: 5rem 8rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     @media (width > 80rem) {
         display: flex;
@@ -202,17 +207,19 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    border: 1.25rem solid white;
-    border-bottom-width: 1rem;
+    border-bottom: 1.5rem solid white;
     border-radius: 10px;
     margin: unset;
     transition: .4s;
     position: relative;
     width: 100%;
+    box-shadow: 0px 10px 30px #00000010;
 
     @media (width > 80rem) {
         aspect-ratio: 3/4;
         width: max(12rem, 12.5vw);
+        border: 1.25rem solid white;
+        border-bottom-width: 1rem;
     }
 
 }
@@ -237,8 +244,12 @@ body {
 }
 
 .cards-section figure h3 {
-    font-size: clamp(1rem, 5.4475vw - 1.6114rem, 1.875rem);
-    margin: 4px 0;
+    font-size: clamp(1.5rem, 5.4475vw - 1.6114rem, 1.875rem);
+    margin: .6rem 0;
+
+    @media (width > 48rem) {
+        margin: 4px 0;
+    }
 }
 
 .cards-section figure a {
@@ -280,6 +291,14 @@ body {
         z-index: 2;
         translate: -25% 50%;
     }
+
+    @media (width > 48rem) {
+        &::before {
+            width: 7rem;
+            height: 1.75rem;
+            translate: -15% 120%;
+        }
+    }
 }
 
 .cards-section .cards-first-row figure:nth-child(3n - 1),
@@ -303,6 +322,14 @@ body {
         z-index: 2;
         translate: 30% 50%;
     }
+
+    @media (width > 48rem) {
+        &::before {
+            width: 6rem;
+            height: 1.75rem;
+            translate: 10% 100%;
+        }
+    }
 }
 
 .cards-section .cards-first-row figure:nth-child(3n),
@@ -325,5 +352,13 @@ body {
         rotate: -50deg;
         z-index: 2;
         translate: -50% -10%;
+    }
+
+    @media (width > 48rem) {
+        &::before {
+            width: 5rem;
+            height: 1.75rem;
+            translate: -50% 20%;
+        }
     }
 }
