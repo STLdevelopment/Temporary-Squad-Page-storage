@@ -167,8 +167,9 @@ body {
 .cards-section-container {
     margin: 0 auto;
     display: grid;
-    grid-row-gap: 5rem;
+    grid-row-gap: 3rem;
     padding: 50px 25px;
+    overflow: scroll;
 
     @media (width > 80rem) {
         transform: rotate(90deg);
@@ -184,17 +185,14 @@ body {
 
 /* Direct parent container of cards */
 .cards-section article {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem 50px;
+    display: flex;
+    gap: 4rem 3rem;
 
     @media (width > 48rem) {
         gap: 5rem 8rem;
-        grid-template-columns: repeat(3, 1fr);
     }
 
     @media (width > 80rem) {
-        display: flex;
         flex-wrap: nowrap;
         gap: 5rem;
         padding-right: 20vw;
@@ -207,12 +205,11 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    border-bottom: 1.5rem solid white;
     border-radius: 10px;
     margin: unset;
     transition: .4s;
     position: relative;
-    width: 100%;
+    width: 50vw;
     box-shadow: 0px 10px 30px #00000010;
 
     @media (width > 80rem) {
@@ -245,7 +242,7 @@ body {
 
 .cards-section figure h3 {
     font-size: clamp(1.5rem, 5.4475vw - 1.6114rem, 1.875rem);
-    margin: .6rem 0;
+    margin: 1.5rem 0 1rem;
 
     @media (width > 48rem) {
         margin: 4px 0;
@@ -262,6 +259,7 @@ body {
     color: black;
     text-decoration: unset;
     transition: .3s;
+    display: grid;
 
     &:hover {
         background-color: black;
@@ -281,6 +279,7 @@ body {
             max-width: fit-content;
             border-radius: 99px;
             margin: 0 auto;
+            grid-area: 1/1;
         }
     }
 }
