@@ -1,5 +1,8 @@
 html {
     font-family: "Inter", sans-serif;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,7 +12,6 @@ h1, h2, h3, h4, h5, h6 {
 main {
     display: flex;
     flex-direction: column;
-    scroll-snap-type: y proximity;
 }
 
 main > * {
