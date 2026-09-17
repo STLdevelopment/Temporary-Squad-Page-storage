@@ -53,13 +53,22 @@ body {
     grid-template-areas:
     'jarellsa jesper joost justin lyanne lou sam rick'
     'lois hva miriale rosa younes wesley david bounyad'
-    'yigal rowynn sophie text text ahmet britt beyza'
-    'noey rayhana sun chahed queeny thijs rabia hajar'
+    'yigal rowynn sophie text text sun britt beyza'
+    'noey rayhana ahmet chahed queeny thijs rabia hajar'
     'melissa aya savannah lyndsey celeste sami aliya mika';
     grid-gap: .5rem;
     height: 100%;
     background-color: black;
     transform: rotate(3deg);
+
+    @media (width < 48rem) {
+        grid-template-areas:
+        'jarellsa jesper joost justin lyanne lou sam rick'
+        'lois hva miriale rosa younes wesley david bounyad'
+        'yigal rowynn sophie sophie sun sun britt beyza'
+        'noey rayhana ahmet chahed queeny thijs rabia hajar'
+        'melissa aya savannah lyndsey celeste sami aliya mika';
+    }
 }
 
 .hero-banner-container img {
@@ -117,6 +126,17 @@ body {
 
     & * {
         color: white;
+    }
+
+    @media (width < 48rem) {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        translate: -50% 0;
+        background-color: #00000090;
+        width: 100%;
+        padding: 5vh 20px;
+        border-radius: 0 0 10px 10px;
     }
 }
 
