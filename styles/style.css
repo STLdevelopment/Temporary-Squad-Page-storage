@@ -68,6 +68,7 @@ body {
         'yigal rowynn sophie sophie sun sun britt beyza'
         'noey rayhana ahmet chahed queeny thijs rabia hajar'
         'melissa aya savannah lyndsey celeste sami aliya mika';
+        grid-gap: .15rem;
     }
 }
 
@@ -131,8 +132,8 @@ body {
     @media (width < 48rem) {
         position: absolute;
         left: 50%;
-        top: 0;
-        translate: -50% 0;
+        top: 50%;
+        translate: -50% -50%;
         background-color: #00000090;
         width: 100%;
         padding: 5vh 20px;
