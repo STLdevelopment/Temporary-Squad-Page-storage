@@ -267,6 +267,22 @@ body {
         background-color: black;
         color: white;
     }
+
+    @media (width < 48rem) {
+        visibility: hidden;
+
+        &::after {
+            content: 'Meer lezen';
+            font-size: 1rem;
+            visibility: visible;
+            background-color: #D9D9D9;
+            display: block;
+            padding: 12px 20px;
+            max-width: fit-content;
+            border-radius: 99px;
+            margin: 0 auto;
+        }
+    }
 }
 
 /* Cards styling and tilting */
