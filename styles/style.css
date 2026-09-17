@@ -140,6 +140,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    scroll-snap-type: x proximity;
 }
 
 .cards-section-wrapper {
