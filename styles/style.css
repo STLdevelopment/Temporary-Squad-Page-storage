@@ -179,7 +179,7 @@ body {
 
 .cards-section figure {
     aspect-ratio: 3/4;
-    width: 12.5vw;
+    width: max(12rem, 12.5vw);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,10 +191,6 @@ body {
     margin: unset;
     transition: .4s;
     position: relative;
-
-    @container (max-width: 12rem) {
-        width: 12rem;
-    }
 }
 
 .cards-section figure div {
