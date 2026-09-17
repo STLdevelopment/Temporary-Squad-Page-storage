@@ -494,7 +494,7 @@ body {
 .footer {
     background-color: black;
     color: white;
-    padding: 2rem 0;
+    padding: 2rem 20px;
 }
 
 .footer-content {
@@ -508,15 +508,12 @@ body {
     padding-top: 1rem;
 
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 1.25rem;
 }
 
-@media (max-width: 480px) {
-
+@media (max-width: 48rem) {
     .amstelcampus {
-        max-width: none;
-        margin: 1rem;
-        padding: 1.5rem;
+        padding: 3rem 20px;
         padding-bottom: 2rem;
     }
 
@@ -548,13 +545,8 @@ body {
         width: 100%;
     }
 
-    .gebouwen h3 {
-        padding-top: 10px;
-        font-size: 18px;
-    }
-
     .gebouwen p {
-        font-size: 14px;
+        font-size: 1rem;
         padding-bottom: 15px;
         padding-right: 45px;
     }
@@ -574,13 +566,12 @@ body {
     }
 
     .footer {
-    background-color: black;
-    color: white;
-    padding: 1rem;
+        background-color: black;
+        color: white;
+        padding: 1rem 20px;
     }
 
     .footer-content {
-        max-width: 1350px;
         margin: 0 auto;
 
         display: flex;
@@ -589,8 +580,6 @@ body {
         border-top: 1px solid white;
         padding-top: 1rem;
 
-        font-family: "Inter", sans-serif;
-        font-size: 14px;
     }
         
 }
