@@ -13,7 +13,8 @@ main {
 }
 
 main > * {
-    scroll-snap-align: center;
+    scroll-margin-top: 10vh;
+    scroll-snap-align: start;
 }
 
 body {
