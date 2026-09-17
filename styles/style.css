@@ -179,6 +179,7 @@ body {
         transform: rotate(90deg);
         padding: 50px 20px;
         grid-row-gap: 2.75rem;
+        overflow: unset;
     }
 }
 
@@ -437,7 +438,7 @@ body {
     object-fit: cover;
 }
 
-article {
+.gebouwen article {
     background-color: white;  
 }
 
