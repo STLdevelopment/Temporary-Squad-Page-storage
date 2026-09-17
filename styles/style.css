@@ -14,6 +14,10 @@ main {
     flex-direction: column;
 }
 
+main > *:not(.hero-banner) {
+    z-index: 2;
+}
+
 body {
     margin: unset;
     background-color: black;
@@ -386,13 +390,8 @@ body {
 
 /* Sophie CSS import */
 .amstelcampus {
-    background-color: #1a1a1a;
-    max-width: 1350px;
-    margin: 2rem auto;
     padding: 3rem;
     border-radius: 8px;
-    margin-top: 50px;
-    margin-bottom: -50px;
     padding-bottom: 8rem;
     background-color: black;
 }
@@ -413,7 +412,6 @@ body {
     gap: 4rem;
     max-width: 1350px;
     margin: 0 auto;
-
 }
 
 .gebouwen-kolom1 {
