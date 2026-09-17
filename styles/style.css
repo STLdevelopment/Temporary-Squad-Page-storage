@@ -190,6 +190,7 @@ body {
     border-radius: 10px;
     margin: unset;
     transition: .4s;
+    position: relative;
 }
 
 .cards-section figure div {
@@ -239,6 +240,30 @@ body {
     rotate: -3deg;
     &:hover {
         rotate: -1deg;
+    }
+
+    &::before {
+        content: '';
+        width: 20%;
+        height: 30px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #B4FDFF;
+        box-shadow: 0px 10px 10px 30px #00000025;
+    }
+
+    &::after {
+        content: '';
+        width: 20%;
+        height: 30px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #B4FDFF;
+        box-shadow: 0px 10px 10px 30px #00000025;
     }
 }
 
