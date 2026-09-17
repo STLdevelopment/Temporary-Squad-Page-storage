@@ -264,6 +264,21 @@ body {
     &:hover {
         rotate: 2deg;
     }
+
+    &::before {
+        content: '';
+        width: 8rem;
+        height: 2rem;
+        display: block;
+        position: absolute;
+        top: -1.25rem;
+        left: 50%;
+        background-color: #D7FFB4;
+        box-shadow: 0px 10px 30px 0px #00000025;
+        rotate: -45deg;
+        z-index: 2;
+        translate: -50% 50%;
+    }
 }
 
 .cards-section .cards-first-row figure:nth-child(3n),
