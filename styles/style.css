@@ -186,7 +186,7 @@ body {
 .cards-section article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem 20%;
+    gap: 4rem 50px;
 
     @media (width > 48rem) {
         gap: 5rem 8rem;
