@@ -150,6 +150,19 @@ body {
     margin: 0 0 10px 0;
 }
 
+.qr-code {
+    position: absolute;
+    width: 5vw;
+    aspect-ratio: 1/1;
+    display: block;
+    bottom: 3rem;
+    right: 3rem;
+
+    @media (width < 48rem) {
+        display: none;
+    }
+}
+
 /* SVG shape divider */
 .visitekaartje-divider {
     z-index: 1;
