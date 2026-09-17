@@ -150,17 +150,37 @@ body {
     margin: 0 0 10px 0;
 }
 
-.qr-code {
+.qr-code-container {
     position: absolute;
-    width: 5vw;
-    aspect-ratio: 1/1;
-    display: block;
-    bottom: 3rem;
-    right: 3rem;
+    top: 50%;
+    right: -5vw;
+    translate: 0 -50%;
+    display: flex;
+    align-items: center;
+    transition: .2s ease;
+    z-index: 9;
+
+    &:hover {
+        right: 0;
+    }
 
     @media (width < 48rem) {
         display: none;
     }
+}
+
+.qr-code-container p {
+    font-size: 1.5rem;
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 99px 0 0 99px;
+}
+
+.qr-code {
+    width: 5vw;
+    aspect-ratio: 1/1;
+    display: block;
 }
 
 /* SVG shape divider */
