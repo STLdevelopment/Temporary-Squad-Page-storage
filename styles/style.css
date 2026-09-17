@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 main {
     display: flex;
     flex-direction: column;
+    scroll-snap-type: y proximity;
 }
 
 body {
@@ -140,7 +141,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    scroll-snap-type: x proximity;
+    scroll-snap-align: center;
 }
 
 .cards-section-wrapper {
