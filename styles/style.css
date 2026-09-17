@@ -364,7 +364,7 @@ body {
 }
 
 @media (width < 48rem) {
-    .cards-section figure:before {
+    .cards-section.cards-section article[class^="cards"] figure:before {
         content: unset;
     }
 }
