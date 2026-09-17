@@ -142,14 +142,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     scroll-snap-align: start;
+    overflow: clip;
+
+    @media (width > 80rem) {
+        height: 100vh;
+    }
 }
 
 .cards-section-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
     @media (width > 80rem) {
         transform: rotate(-90deg);
@@ -161,12 +166,14 @@ body {
 
 .cards-section-container {
     margin: 0 auto;
-    padding: 50px 20px;
     display: grid;
-    grid-row-gap: 2.75rem;
+    grid-row-gap: 5rem;
+    padding: 50px;
 
     @media (width > 80rem) {
         transform: rotate(90deg);
+        padding: 50px 20px;
+        grid-row-gap: 2.75rem;
     }
 }
 
@@ -177,14 +184,19 @@ body {
 
 /* Direct parent container of cards */
 .cards-section article {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 5rem;
-    padding-right: 20vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 8rem;
+
+    @media (width > 80rem) {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 5rem;
+        padding-right: 20vw;
+    }
 }
 
 .cards-section figure {
-    aspect-ratio: 3/4;
     width: max(12rem, 12.5vw);
     display: flex;
     flex-direction: column;
@@ -197,6 +209,11 @@ body {
     margin: unset;
     transition: .4s;
     position: relative;
+
+    @media (width > 80rem) {
+        aspect-ratio: 3/4;
+    }
+
 }
 
 .cards-section figure div {
